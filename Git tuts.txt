@@ -1,0 +1,32 @@
+First to make folder then open that folder with git bash now all work from git bash will be done through that folder
+In git bash
+$ git init  -> This will make that folder a  .git folder that means now git will took care on that folder(In our case it is in C:\Users\a_moh\OneDrive\Documents\Git Tutorials)
+$ git status  -> this will indicate that our git repository is made or not.
+$ git add --a  -> this will add all files in our folder as a git file and commit it
+$ git commit -m "anything"  ->this will be commited on all files in that folder
+$ git log  -> This will showcase the commited lines we used
+$ git add first.txt  -> This can be also done insted to add all files like git add --a
+$ rm -rf .git  ->This will remove this folder as a git repository
+$ pwd  -> Present working directory this command will show
+$ ls   -> list content
+$ git clone https://github.com/tensorflow/tensorflow.git myhello  -> This repository is from github but i can clone it to my computer by this command and myhello is the folder name of all download
+(Ctrl+c is used to stop the processing command)
+$ touch erroe.log  -> This will add new file name this in our folder
+now if we want to untrack this file or say ignore than
+$ touch .gitignore  -> new file added to folder
+(In .gitignore write the file name you want to untrack for eg:- error.log)
+$ git diff  -> this compare the working directory and staging area
+$ git diff --staged  -> This will show the content in the file which is present in our folder
+$ git rm first.txt  -> This will delete the file from the folder
+$ git mv first.txt first_renamed.txt  -> This will rename the file to first_rename.txt
+$ git rm --cached first.txt  -> This will untrack the ignored file(It will not delete the file)
+$ git rm first.txt  -> This will delete the file from the folder
+$ git log -p  -> This will show the commite or changes made by people in that repository
+$ git log --stat  -> this will show the history of chnages in short
+$ git log --since=2.days  -> This will show the changes in the repository in 2 days
+$ git commit --amed  -> we can change any commite of that repository
+$ "git restore --staged <file>..."  ->This will unstage the file
+
+$ git chaeckout -- third.txt  -> This will redo all the changes we made in the file
+
+
